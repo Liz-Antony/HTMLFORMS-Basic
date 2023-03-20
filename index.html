@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--Elizabeth Antony-->
+
+<html>
+<head>
+     <title>Elizabeth Antony</title>
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <form name="form1" onsubmit="test();">
+    <div id="container">
+       
+        <div class="header">Assignment#4/Elizabeth Antony/991666601</div>
+         <div id="personalinfo">
+             <h4>Personal info </h4>
+             Lastname:<input type="text" required name="lastname" placeholder="Antony" autofocus ><br>
+             Firstname:<input type="text" required name="firstname" placeholder="Elizabeth" ><br>
+             Student number:<input type="number" required name="studentnumber" placeholder="991666601" ><br>
+             Sheridan Email:<input type="email" required name="email" placeholder="antonye@sheridancollege.ca">
+
+           </div>
+        <div id="sheridan">
+            <h4>Sheridan experience </h4>
+            Date started:<input type="date"><br>
+            Previous years of post-secondary experience:<input type="number" placeholder="0"><br>
+            Campus:<select aria-placeholder="Trafalgar">
+                
+                <option>Trafalgar</option>
+                <option>Davis</option>
+                <option>HMC</option>
+            </select><br><br><br>
+        </div>
+        <div id="financial"><h4>financial Data</h4>
+            Amount of money received:<input type="number" required><br>
+            Money source:<br>
+          <input type="checkbox">Scholarships<input type="checkbox">RSEP <input type="checkbox">Bursary <input type="checkbox">OSAP
+
+        </div>
+        <div id="comment">
+            
+            <h4>Comment</h4>
+            <textarea name="suggestions" rows="5" cols="20"></textarea>
+            
+        </div>
+        <div id="footer">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+
+
+        </div>
+
+    </div>
+</div> 
+    </form>
+    <script>
+        function test(){
+            var x=document.forms.form1.firstname.value;
+            var z=document.forms.form1.studentnumber.value;
+            var y=document.forms.form1.lastname.value;
+            alert(x);
+            alert(y);
+            alert(z);
+        }
+    </script>
+</body>
+</html>
